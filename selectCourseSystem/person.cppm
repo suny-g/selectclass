@@ -1,0 +1,29 @@
+// Module
+// File: domain.cpp   Version: 1.0   License: AGPLv3
+// Created: LuoJianqiu
+// Email: 2024051604059@qq.com
+// 2026-01-05 15:41:48
+// Time: Description:
+//
+//Change log
+//     [v1.1] LuoJianqiu 2024051604059@qq.com 2026-01-05 15:41:48
+//         *
+export module registrar : dn.person;
+
+import std;
+using std::string;
+
+export class Person
+{
+public:
+    Person(int id, string name);
+    bool hasId();
+    string info();
+private:
+    int m_id;
+    string m_name;
+};
+
+Person::Person(int id, string name)
+    :m_id(id), m_name(name)
+{}
