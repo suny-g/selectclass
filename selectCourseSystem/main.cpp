@@ -12,8 +12,8 @@
 import std;
 import registrar;
 
-imt main()
+int main()
 {
-    registrar system;
+    Registrar system;
     return system.exec();
 }

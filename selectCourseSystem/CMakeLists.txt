@@ -27,13 +27,13 @@ set(APPLICATION_LAYER_FILES
     #应用逻辑层模块分区
     controller.cppm
     studentcontroller.cppm
-    teachercontroller.cpp
+    teachercontroller.cppm
     academicsecretarycobtroller.cppm
 )
 
 set(DOMAIN_LAYER_FILES
     #领域层模块分区
-    domain.cpp
+    domain.cppm
     person.cppm
     student.cppm
     teacher.cppm

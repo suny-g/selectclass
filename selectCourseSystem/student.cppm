@@ -19,14 +19,20 @@ using std::vector;
 export class Student : public Person
 {
 public:
-    Student(int id, string name, m_credit = 0, m_grade = 0);
-    void selecteCourse();
-    void lookMyInformation();
-    void lookCourseTask();
-    void lookCourseMark();
-    void cancelCourse();
+    Student(int id, string name);
+    void selectCourse(class Course* course); //选课
+    void addMyGrades(double mark); //添加我的成绩
+    void lookMyInformation(); //查看自己的信息
+    void lookCourseInformation(class Course* course); //查看课程任务
+    void lookCourseMark(class Course* course); //查看课程成绩
+    void cancelCourse(class Course* course); //退课
 private:
-    double m_credit;
-    double m_grade;
-    vector<class Course*> _courses;
+    double m_credit; //我的学分
+    std::map<int,double>_grades; //前面用于放课程号，后面放对应的成绩
+    vector<class Course*> _courses; //用于存放所选课程
 };
+
+Student::Student(int id, string name)
+    :Person(id,name),m_credit(0)
+{}
+

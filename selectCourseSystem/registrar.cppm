@@ -20,5 +20,6 @@ import std;
 export class Registrar
 {
 public:
+    //控制整个程序的进行，以及反应状态
     int exec();
 };

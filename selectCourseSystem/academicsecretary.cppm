@@ -20,16 +20,20 @@ export class AcademicSecretary : public Person
 {
 public:
     AcademicSecretary(int id, string name);
-    void findCourseId();
-    void findStudentId();
-    void findTeacherId();
-    void addTeacherTAC();
-    void cancelTeacherTAC();
-    void courseInquiry();
-    void addCourse();
-    void cancelCourse();
+    class Course* findCourseId(int cid); //找到对应的课程
+    class Student* findStudentId(int sid); //找到对应的学生
+    class Teacher* findTeacherId(int tid); //找到对应的教师
+    void addTeacherTAC(int tid, int cid); //添加老师的开课
+    void cancelTeacherTAC(int tid, int cid); //取消老师的开课
+    void courseInquiry(); //查询所有课程
+    void addCourse(int cid); //添加新课程
+    void cancelCourse(int cid); //删除课程
 private:
-    vector<class Course*>_courses;
-    vector<class Student*>_students;
-    vector<class Teacher*>_teachers;
+    vector<class Course*>_courses;  //存放所有课程
+    vector<class Student*>_students; //存放所有学生
+    vector<class Teacher*>_teachers; //存放所有老师
 };
+
+AcademicSecretary::AcademicSecretary(int id, string name)
+    :Person(id,name)
+{}

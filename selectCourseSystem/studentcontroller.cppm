@@ -16,8 +16,9 @@ import std;
 export class StudentController
 {
 public:
-    void menu();
-    void courseInquiry();
-    void Selection();
-    lookPersonInformation();
+    void menu(); //显示菜单
+    void courseInquiry(class Student* student); //控制学生查询自己的课程
+    void selectCourse(class Student* student); //选课
+    void cancelCourse(class Student* student); //退课
+    void lookPersonInformation(class Student* student); //查看个人信息
 };

@@ -11,17 +11,21 @@
 export module registrar : dn.course;
 
 import std;
+using std::vector;
+using std::string;
 
 export class Course
 {
 public:
-    void lookCourseInformation();
-    void addstudent();
-    void cancelStduent();
+    void lookCourseInformation(); //查看该课程的信息
+    void addStudent(class Student* student); //增加课程学生
+    void cancelStduent(class Student* student); //删除课程学生
+    void scheduleCourse(string task); //课程任务
 private:
-    class Teacher* GALTeacher;
-    int cid;
-    string cname;
-    vector<class Student*>_students;
-    double credit;
+    class Teacher* GALTeacher; //任教老师
+    int cid; //课程号
+    string cname; //课程名
+    vector<class Student*>_students; //该课程的学生
+    double credit; //课程的学分
+    string task; //课程任务
 };

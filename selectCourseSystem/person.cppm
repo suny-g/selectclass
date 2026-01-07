@@ -17,7 +17,7 @@ export class Person
 {
 public:
     Person(int id, string name);
-    bool hasId();
+    bool hasId(int id);
     string info();
 private:
     int m_id;
@@ -27,3 +27,16 @@ private:
 Person::Person(int id, string name)
     :m_id(id), m_name(name)
 {}
+
+string Person::hasId()
+{
+    return std::format("{}   {}",m_id,m_name);
+}
+
+bool Person::hasId(int id)
+{
+    if(m_id == id){
+        return true;
+    }
+    return false;
+}

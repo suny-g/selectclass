@@ -16,6 +16,6 @@ import std;
 export class UI
 {
 public:
-    void sign();
-    void guide();
+    void sign(); //系统的登陆函数
+    void guide(); //引导用户操作的函数
 };
