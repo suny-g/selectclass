@@ -15,9 +15,9 @@ import std;
 export class TeacherController
 {
 public:
-    void menu();
-    void schedukeTask();
-    void score();
-    void lookMyStudent();
-    void lookMyTAC();
+    void menu(); //显示菜单
+    void schedukeTask(class Teacher* teacher); //安排教学任务
+    void score(class Teacher* teacher); //给学生评分
+    void lookMyStudent(class Teacher* teacher); //查看我的学生
+    void lookMyTAC(class Teacher* teacher); //查看我任教的课程
 };
