@@ -12,6 +12,7 @@
 export module registrar : ctr.studentcontroller;
 
 import std;
+import :dn.student;
 
 export class StudentController
 {

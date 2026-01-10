@@ -11,6 +11,7 @@
 export module registrar : ctr.teachercontroller;
 
 import std;
+import :dn.teacher;
 
 export class TeacherController
 {

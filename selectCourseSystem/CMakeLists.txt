@@ -11,6 +11,9 @@ project(selecteCoursesSystem LANGUAGES CXX)
 add_executable(selecteCoursesSystem
     #math.cpp                              # 模块实现单元
     main.cpp
+    student.dat
+    course.dat
+    teach.dat
 )
 
 set(REGISTRAR_FILES
@@ -43,6 +46,12 @@ set(DOMAIN_LAYER_FILES
 
 set(DATA_ACCESS_LAYER_FILES
     #数据管理层模块分区
+    databaseManger.cppm
+    InitiallzeDatabase.cppm
+    database.cppm
+    daStudent.cppm
+    daCourse.cppm
+    daTeach.cppm
 )
 
 source_group("Registrar" FILES ${REGISTRAR_FILES})

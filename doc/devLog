@@ -1,5 +1,8 @@
 create by Luojianqiu 2026,1,5
 将代码的框架成功搭建，并绘制了初始UML类图
 
-creatr by Luojianiqu 2026,1,7
+create by Luojianiqu 2026,1,7
 将各个类的函数接口完善了，然后修改了一些文件错误以及代码的逻辑错误，并且完善了UML类图,但是代码和UML图还不包含数据库内容
+
+create by Luojianqiu 2026,1,11
+将UML类图完全建立完整，增加了数据库，并将代码中数据库的代码框架搭建完毕，还绘制了绘制了数据库的概念设计及E-R图, 但应当注意修改cmakelists.txt文件，为其增加#include <pqxx/pqxx>库的路径等命令

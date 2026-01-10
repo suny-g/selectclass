@@ -14,6 +14,7 @@ export module registrar;
 export import :ui;
 export import :controller;
 export import :domain;
+export import :database;
 
 import std;
 

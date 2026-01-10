@@ -10,6 +10,9 @@
 //         *此模块为教学秘书的控制器
 export module registrar : ctr.academicsecretarycontroller;
 
+import std;
+import :dn.academicsecretary;
+
 export class AademicSecretaryController
 {
 public:
