@@ -1,0 +1,42 @@
+{
+	"bmi-installation" : null,
+	"compiler-frontend-variant" : "GNU",
+	"compiler-id" : "GNU",
+	"compiler-simulate-id" : "",
+	"config" : "Debug",
+	"cxx-modules" : 
+	{
+		"CMakeFiles/__CMAKE__CXX23@synth_d88ede04f9e9.dir/7e51e9865fa1.bmi" : 
+		{
+			"bmi-only" : true,
+			"destination" : null,
+			"name" : "std",
+			"relative-directory" : "",
+			"source" : "/usr/include/c++/15.2.1/bits/std.cc",
+			"type" : "CXX_MODULES",
+			"visibility" : "INTERFACE"
+		},
+		"CMakeFiles/__CMAKE__CXX23@synth_d88ede04f9e9.dir/f487656d2897.bmi" : 
+		{
+			"bmi-only" : true,
+			"destination" : null,
+			"name" : "std",
+			"relative-directory" : "",
+			"source" : "/usr/include/c++/15.2.1/bits/std.compat.cc",
+			"type" : "CXX_MODULES",
+			"visibility" : "INTERFACE"
+		}
+	},
+	"database-info" : null,
+	"dir-cur-bld" : "/run/media/root/study/\u8f6f\u4ef6\u6784\u5efa\u4e0e\u5b9e\u73b0/selectclass/selectCourseSystem/build/C_C_2026_01_12-Debug",
+	"dir-cur-src" : "/run/media/root/study/\u8f6f\u4ef6\u6784\u5efa\u4e0e\u5b9e\u73b0/selectclass/selectCourseSystem",
+	"dir-top-bld" : "/run/media/root/study/\u8f6f\u4ef6\u6784\u5efa\u4e0e\u5b9e\u73b0/selectclass/selectCourseSystem/build/C_C_2026_01_12-Debug",
+	"dir-top-src" : "/run/media/root/study/\u8f6f\u4ef6\u6784\u5efa\u4e0e\u5b9e\u73b0/selectclass/selectCourseSystem",
+	"exports" : [],
+	"forward-modules-from-target-dirs" : [],
+	"include-dirs" : [],
+	"language" : "CXX",
+	"linked-target-dirs" : [],
+	"module-dir" : "/run/media/root/study/\u8f6f\u4ef6\u6784\u5efa\u4e0e\u5b9e\u73b0/selectclass/selectCourseSystem/build/C_C_2026_01_12-Debug/CMakeFiles/__CMAKE__CXX23@synth_d88ede04f9e9.dir",
+	"sources" : {}
+}
