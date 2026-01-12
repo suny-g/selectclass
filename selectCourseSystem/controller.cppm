@@ -1,5 +1,5 @@
 // Module
-// File: ui.cppm   Version: 1.0   License: AGPLv3
+// File: controller.cppm   Version: 1.0   License: AGPLv3
 // Created: LuoJianqiu
 // Email: 2024051604059@qq.com
 // 2026-01-05 15:23:41
