@@ -6,3 +6,12 @@ create by Luojianiqu 2026,1,7
 
 create by Luojianqiu 2026,1,11
 将UML类图完全建立完整，增加了数据库，并将代码中数据库的代码框架搭建完毕，还绘制了绘制了数据库的概念设计及E-R图, 但应当注意修改cmakelists.txt文件，为其增加#include <pqxx/pqxx>库的路径等命令
+
+created bu Yang Guang 2026.1.12
+完善应用逻辑层Application Layer的代码，该模块分别为学生，老师，及教学秘书提供控制器，方便调用领域层的操作
+
+created by Yang Guang 2026.1.12
+完善领域层Domain Layer的代码，该模块是学生，老师，教学秘书以及课程类的具体操作的实现
+
+created by Yang Guang 2026.1.12
+完善表现层 Presentation Layer和主函数的代码
