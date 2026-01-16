@@ -1,7 +1,8 @@
 // Module
 // File: DatabaseManger.cpp   Version: 0.1.0   License: AGPLv3
 // Created: Luojianqiu      2026-01-10 21:47:42
-// Description:
+// finished: tujunfeng      20226-01-15
+// Description:管理数据库连接和基本操作
 //
 export module registrar:da.databaseManager;
 
@@ -17,57 +18,90 @@ const string DB_CONNECTION = "dbname=student_course_db user=postgres password=12
 export class DatabaseManager
 {
 public:
-    bool connect();
-    bool execteSQL(const string& sql);
-    void disconnect();
-    ~DatabaseManager();
-};
+        DatabaseManager(const string& connStr);
 
-// 连接数据库
-bool DatabaseManager::connect() {
-    string dbname,user,password,host,port;
-    print("请输入您的dbname: ");
-    std::cin >> dbname;
-    print("请输入您的user: ");
-    std::cin >> user;
-    print("请输入您的password: ");
-    std:: cin >> password;
-    print("请输入您的host: ");
-    std::cin >> host;
-    print("请输入您的port: ");
-    std::cin >> port;
-    string DB_CONNECTION = std::format("{} {} {} {} {}",dbname,user,password,host,port);
+        bool isConnected() const;
+
+        bool executeSQL(const string& sql);
+
+        result query(const string& sql);
+
+        void disconnect();
+
+        ~DatabaseManager();
+
+   private:
+       connection* conn = nullptr;
+       string connectionString;
+   };
+
+DatabaseManager::DatabaseManager(const string& connStr)
+    : connectionString(connStr)
+{
     try {
-        conn = new connection(DB_CONNECTION);
+        conn = new connection(connStr);
         if (conn->is_open()) {
             print("成功连接到 PostgreSQL 数据库\n");
-            print("数据库名称: {}\n",conn->dbname);
-            return true;
+            print("数据库名称: {}\n", conn->dbname());
         } else {
             print("无法连接到数据库\n");
-            return false;
         }
     } catch (const exception &e) {
-        print("连接错误: {}\n"e.what);
-        return false;
+        print("连接错误: {}\n", e.what());
     }
 }
+// 连接数据库
+bool DatabaseManager::isConnected() const
+{
+    return conn && conn->is_open();
+}
 
-bool DatabaseManager::executeSQL(const string& sql) {
+bool DatabaseManager::executeSQL(const string& sql)
+{
+    if (!isConnected()) {
+        print("错误：数据库未连接\n");
+        return false;
+    }
+
     try {
         work txn(*conn);
         txn.exec(sql);
         txn.commit();
         print("SQL执行成功: ");
-        std::cout << sql.substr(0, 100) << (sql.length() > 100 ? "..." : "") << std::endl;
+        // 只打印前100个字符
+        if (sql.length() > 100) {
+            print("{}...\n", sql.substr(0, 100));
+        } else {
+            print("{}\n", sql);
+        }
         return true;
     } catch (const exception &e) {
-        print("SQL执行错误: {}\n"e.what());
+        print("SQL执行错误: {}\n", e.what());
         return false;
     }
 }
 
-void DatabaseManager::disconnect() {
+result DatabaseManager::query(const string& sql)
+{
+    if (!isConnected()) {
+        print("错误：数据库未连接\n");
+        return result();
+    }
+
+    try {
+        work txn(*conn);
+        result res = txn.exec(sql);
+        txn.commit();
+        print("查询成功，返回 {} 行数据\n", res.size());
+        return res;
+    } catch (const exception &e) {
+        print("查询错误: {}\n", e.what());
+        return result();
+    }
+}
+
+void DatabaseManager::disconnect()
+{
     if (conn) {
         conn->disconnect();
         delete conn;
@@ -76,6 +110,7 @@ void DatabaseManager::disconnect() {
     }
 }
 
-DatabaseManager::~DatabaseManager() {
+DatabaseManager::~DatabaseManager()
+{
     disconnect();
 }
