@@ -5,16 +5,16 @@
 // 2026-01-05 15:44:40
 // Time: Description:
 //
-//Change log
-    [v1.1] Luolianqiu 2024051604059@qq.com 2026-01-05 15:44:40
-    *
+//Change log[v1.1] Luolianqiu 2024051604059@qq.com 2026-01-05 15:44:40
 export module registrar : dn.student;
 
 import :dn.person;
+import :dn.course;
 import std;
 
 using std::string;
 using std::vector;
+using std::print;
 
 export class Student : public Person
 {

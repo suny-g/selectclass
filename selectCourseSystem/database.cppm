@@ -7,7 +7,7 @@
 export module registrar:database;
 
 export import :da.databaseManager;
-export import :da.initiallezDatabase;
+export import :da.initializeDatabase;
 export import :da.course;
 export import :da.teach;
 export import :da.student;

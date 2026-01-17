@@ -7,6 +7,9 @@ set(CMAKE_CXX_MODULE_STD ON)
 
 project(selecteCoursesSystem LANGUAGES CXX)
 
+find_package(PostgreSQL REQUIRED)
+
+
 # set(MODULE_LIB_DIR1 /opt/utils/modules)  # 模块库的目录的设置
 add_executable(selecteCoursesSystem
     #math.cpp                              # 模块实现单元
@@ -47,7 +50,7 @@ set(DOMAIN_LAYER_FILES
 set(DATA_ACCESS_LAYER_FILES
     #数据管理层模块分区
     databaseManger.cppm
-    InitiallzeDatabase.cppm
+    InitializeDatabase.cppm
     database.cppm
     daStudent.cppm
     daCourse.cppm
@@ -73,7 +76,11 @@ target_sources(selecteCoursesSystem  PRIVATE FILE_SET cxx_modules TYPE CXX_MODUL
     FILES ${PRESENTATION_LAYER_FILES} ${APPLICATION_LAYER_FILES} ${DOMAIN_LAYER_FILES} ${DATA_ACCESS_LAYER_FILES} ${REGISTRAR_FILES}
 )
 target_compile_features(selecteCoursesSystem PRIVATE cxx_std_23)
-
+target_link_libraries(selecteCoursesSystem
+    PRIVATE
+    -lpqxx
+    -lpq
+)
 
 
 

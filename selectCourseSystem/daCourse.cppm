@@ -3,10 +3,12 @@
 // Created:Luojianqiu       2026-01-11 01:48:08
 // Description:课程数据访问对象
 //
+module;
+
+#include <pqxx/pqxx>
 
 export module registrar : da.course;
 
-#include <pqxx/pqxx>
 import std;
 import :da.databaseManager;
 //import :dn.course;

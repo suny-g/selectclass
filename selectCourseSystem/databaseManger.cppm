@@ -4,13 +4,14 @@
 // finished: tujunfeng      20226-01-15
 // Description:管理数据库连接和基本操作
 //
-export module registrar:da.databaseManager;
-
+module;
 #include <pqxx/pqxx>
+export module registrar:da.databaseManager;
 import std;
 
 using std::print;
 using std::string;
+using std::exception;
 using namespace pqxx;
 
 const string DB_CONNECTION = "dbname=student_course_db user=postgres password=123456 host=localhost port=5432";
@@ -31,15 +32,16 @@ public:
         ~DatabaseManager();
 
    private:
-       connection* conn = nullptr;
-       string connectionString;
+       //connection* conn = nullptr;
+        std::unique_ptr<connection> conn;
+        string connectionString;
    };
 
 DatabaseManager::DatabaseManager(const string& connStr)
     : connectionString(connStr)
 {
     try {
-        conn = new connection(connStr);
+        conn = std::make_unique<connection>(connStr);
         if (conn->is_open()) {
             print("成功连接到 PostgreSQL 数据库\n");
             print("数据库名称: {}\n", conn->dbname());
@@ -103,9 +105,8 @@ result DatabaseManager::query(const string& sql)
 void DatabaseManager::disconnect()
 {
     if (conn) {
-        conn->disconnect();
-        delete conn;
-        conn = nullptr;
+        conn->close();
+        conn.reset();
         print("已断开数据库连接\n");
     }
 }

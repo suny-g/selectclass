@@ -12,6 +12,8 @@
 export module registrar : ui;
 
 import std;
+using std::print;
+
 
 export class UI
 {

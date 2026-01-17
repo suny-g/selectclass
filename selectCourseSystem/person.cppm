@@ -19,7 +19,7 @@ public:
     Person(int id, string name);
     bool hasId(int id);
     string info();
-private:
+protected:
     int m_id;
     string m_name;
 };

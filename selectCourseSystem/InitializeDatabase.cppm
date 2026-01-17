@@ -1,20 +1,21 @@
 // Module
-// File: InitiallzeDatabase.cppm   Version: 0.1.0   License: AGPLv3
+// File: InitializeDatabase.cppm   Version: 0.1.0   License: AGPLv3
 // Created:Luojianqiu       2026-01-11 01:28:50
 // Description:数据库初始化
 //
-
-export module registrar:da.initiallezDatabase;
+module;
 
 #include <pqxx/pqxx>
 #include <fstream>
+
+export module registrar:da.initializeDatabase;
 
 import :da.databaseManager;
 import std;
 
 using std::print;
 
-export class InitiallezDatabase
+export class InitializeDatabase
 {
 public:
     InitializeDatabase(DatabaseManager* db);
@@ -110,11 +111,11 @@ bool InitializeDatabase::importDataFromFiles()
 
     try {
         // 导入学生数据
-        ifstream studentFile("student.dat");
+        std::ifstream studentFile("student.dat");
         if (studentFile.is_open()) {
             string line;
             while (getline(studentFile, line)) {
-                stringstream ss(line);
+                std::stringstream ss(line);
                 int id;
                 string name;
 
@@ -134,11 +135,11 @@ bool InitializeDatabase::importDataFromFiles()
         }
 
         // 导入教师数据
-        ifstream teacherFile("teach.dat");
+        std::ifstream teacherFile("teach.dat");
         if (teacherFile.is_open()) {
             string line;
             while (getline(teacherFile, line)) {
-                stringstream ss(line);
+                std::stringstream ss(line);
                 int id;
                 string name;
 

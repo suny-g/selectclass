@@ -13,6 +13,7 @@ export module registrar : dn.course;
 import std;
 using std::vector;
 using std::string;
+using std::print;
 
 export class Course
 {
@@ -25,7 +26,7 @@ private:
     class Teacher* GALTeacher; //任教老师
     int cid; //课程号
     string cname; //课程名
-    vector<class Student>_students; //该课程的学生
+    vector<class Student*>_students; //该课程的学生
     double credit; //课程的学分
     string task; //课程任务
 };
@@ -45,7 +46,7 @@ void Course::lookCourseInformation()
 void Course::addStudent(class Student* student)
 {
     if (student) {
-        _students.push_back(*student);
+        _students.push_back(student); //存储指针，而不是解引用
         print("学生已添加到课程\n");
     }
 }
@@ -53,7 +54,11 @@ void Course::addStudent(class Student* student)
 void Course::cancelStudent(class Student* student)
 {
     if (student) {
-        // 实际中需要从_students中移除该学生
+        //从vector中移除指针
+        _students.erase(
+                  std::remove(_students.begin(), _students.end(), student),
+                  _students.end()
+              );
         print("学生已从课程中移除\n");
     }
 }

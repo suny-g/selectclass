@@ -12,10 +12,12 @@
 export module registrar : dn.teacher;
 
 import :dn.person;
+import :dn.course;
 import std;
 
 using std::string;
 using std::vector;
+using std::print;
 
 export class Teacher : public Person
 {

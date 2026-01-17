@@ -3,10 +3,12 @@
 // Created:Luojianqiu       2026-01-11 01:48:34
 // Description:
 //
+module;
+
+#include <pqxx/pqxx>
 
 export module registrar : da.teach;
 
-#include <pqxx/pqxx>
 import std;
 import :da.databaseManager;
 //import :dn.teacher;

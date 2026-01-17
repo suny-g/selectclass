@@ -11,9 +11,11 @@
 export module registrar : dn.academicsecretary;
 
 import :dn.person;
+import :dn.teacher;
 import std;
 using std::string;
 using std::vector;
+using std::print;
 
 export class AcademicSecretary : public Person
 {
