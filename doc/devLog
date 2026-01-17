@@ -15,3 +15,18 @@ created by Yang Guang 2026.1.12
 
 created by Yang Guang 2026.1.12
 完善表现层 Presentation Layer和主函数的代码
+
+eated by [你的名字] 2026.01.13
+完善数据层Data Access Layer的代码，该模块是管理数据库的模块分区，其调用者应当为教学秘书类的对象
+
+created by tujunfeng 2026.01.16
+完善数据层Data Access Layer的代码，第一次提交：创建数据库管理器基础框架，包括DatabaseManager类和数据库连接功能
+
+created by tujunfeng 2026.01.16
+完善数据层Data Access Layer的代码，第二次提交：实现数据库初始化和StudentDAO，支持学生数据的CRUD操作和选课功能
+
+created by tujunfeng 2026.01.17
+完善数据层Data Access Layer的代码，第三次提交：完成完整数据层实现，包括CourseDAO、TeacherDAO
+
+created by tujunfeng 2026.01.17
+完善数据层Data Access Layer的代码，第四次提交：完成EnrollmentDAO
