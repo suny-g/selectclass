@@ -11,6 +11,9 @@ export module registrar : da.student;
 
 import std;
 import :da.databaseManager;
+
+using std::format;
+
 //import :dn.student;
 
 export class DaStudent

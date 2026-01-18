@@ -13,6 +13,8 @@ import std;
 import :da.databaseManager;
 //import :dn.teacher;
 
+using std::format;
+
 export class DaTeacher
 {
 public:

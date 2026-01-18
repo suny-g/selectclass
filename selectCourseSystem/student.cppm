@@ -15,6 +15,7 @@ import std;
 using std::string;
 using std::vector;
 using std::print;
+using std::map;
 
 export class Student : public Person
 {
@@ -26,10 +27,10 @@ public:
     void lookCourseInformation(class Course* course); //查看课程任务
     void lookCourseMark(class Course* course); //查看课程成绩
     void cancelCourse(class Course* course); //退课
+     vector<class Course*> _courses; //用于存放所选课程
 private:
     double m_credit; //我的学分
     std::map<int,double> grades; //前面用于放课程号，后面放对应的成绩
-    vector<class Course*> _courses; //用于存放所选课程
 };
 
 // 实现代码

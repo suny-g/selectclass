@@ -1,12 +1,16 @@
 // File: daEnrollment.cppm   Version: 0.1.0   License: AGPLv3
 // Created: tujunfeng        2026-01-17
 // Description: 选课数据访问对象
+module;
+
+#include <pqxx/pqxx>
 
 export module registrar:da.enrollment;
 
-#include <pqxx/pqxx>
 import std;
 import :da.databaseManager;
+
+using std::format;
 
 export class DaEnrollment
 {

@@ -7,7 +7,7 @@
 //
 // Change log
 // [v1.1] Luolianqiu 2024051604059@qq.com 2026-01-05 15:41:48
-// *
+
 export module registrar : dn.person;
 
 import std;
@@ -19,7 +19,6 @@ public:
     Person(int id, string name);
     bool hasId(int id);
     string info();
-protected:
     int m_id;
     string m_name;
 };

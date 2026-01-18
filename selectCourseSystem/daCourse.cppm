@@ -13,6 +13,10 @@ import std;
 import :da.databaseManager;
 //import :dn.course;
 
+using std::format;
+using std::string;
+using namespace pqxx;
+
 export class DaCourse
 {
 public:

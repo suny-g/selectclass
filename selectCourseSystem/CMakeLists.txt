@@ -55,6 +55,7 @@ set(DATA_ACCESS_LAYER_FILES
     daStudent.cppm
     daCourse.cppm
     daTeach.cppm
+    daEnrollment.cppm
 )
 
 source_group("Registrar" FILES ${REGISTRAR_FILES})

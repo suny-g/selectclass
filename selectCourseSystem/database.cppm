@@ -11,3 +11,4 @@ export import :da.initializeDatabase;
 export import :da.course;
 export import :da.teach;
 export import :da.student;
+export import :da.enrollment;
