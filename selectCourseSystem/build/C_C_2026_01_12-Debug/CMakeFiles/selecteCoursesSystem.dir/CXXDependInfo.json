@@ -1,0 +1,212 @@
+{
+	"bmi-installation" : null,
+	"compiler-frontend-variant" : "GNU",
+	"compiler-id" : "GNU",
+	"compiler-simulate-id" : "",
+	"config" : "Debug",
+	"cxx-modules" : 
+	{
+		"CMakeFiles/selecteCoursesSystem.dir/InitiallzeDatabase.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"destination" : null,
+			"name" : "cxx_modules",
+			"relative-directory" : "",
+			"source" : "/run/media/root/study/\u8f6f\u4ef6\u6784\u5efa\u4e0e\u5b9e\u73b0/selectclass/selectCourseSystem/InitiallzeDatabase.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PRIVATE"
+		},
+		"CMakeFiles/selecteCoursesSystem.dir/academicsecretary.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"destination" : null,
+			"name" : "cxx_modules",
+			"relative-directory" : "",
+			"source" : "/run/media/root/study/\u8f6f\u4ef6\u6784\u5efa\u4e0e\u5b9e\u73b0/selectclass/selectCourseSystem/academicsecretary.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PRIVATE"
+		},
+		"CMakeFiles/selecteCoursesSystem.dir/academicsecretarycobtroller.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"destination" : null,
+			"name" : "cxx_modules",
+			"relative-directory" : "",
+			"source" : "/run/media/root/study/\u8f6f\u4ef6\u6784\u5efa\u4e0e\u5b9e\u73b0/selectclass/selectCourseSystem/academicsecretarycobtroller.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PRIVATE"
+		},
+		"CMakeFiles/selecteCoursesSystem.dir/controller.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"destination" : null,
+			"name" : "cxx_modules",
+			"relative-directory" : "",
+			"source" : "/run/media/root/study/\u8f6f\u4ef6\u6784\u5efa\u4e0e\u5b9e\u73b0/selectclass/selectCourseSystem/controller.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PRIVATE"
+		},
+		"CMakeFiles/selecteCoursesSystem.dir/course.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"destination" : null,
+			"name" : "cxx_modules",
+			"relative-directory" : "",
+			"source" : "/run/media/root/study/\u8f6f\u4ef6\u6784\u5efa\u4e0e\u5b9e\u73b0/selectclass/selectCourseSystem/course.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PRIVATE"
+		},
+		"CMakeFiles/selecteCoursesSystem.dir/daCourse.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"destination" : null,
+			"name" : "cxx_modules",
+			"relative-directory" : "",
+			"source" : "/run/media/root/study/\u8f6f\u4ef6\u6784\u5efa\u4e0e\u5b9e\u73b0/selectclass/selectCourseSystem/daCourse.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PRIVATE"
+		},
+		"CMakeFiles/selecteCoursesSystem.dir/daStudent.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"destination" : null,
+			"name" : "cxx_modules",
+			"relative-directory" : "",
+			"source" : "/run/media/root/study/\u8f6f\u4ef6\u6784\u5efa\u4e0e\u5b9e\u73b0/selectclass/selectCourseSystem/daStudent.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PRIVATE"
+		},
+		"CMakeFiles/selecteCoursesSystem.dir/daTeach.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"destination" : null,
+			"name" : "cxx_modules",
+			"relative-directory" : "",
+			"source" : "/run/media/root/study/\u8f6f\u4ef6\u6784\u5efa\u4e0e\u5b9e\u73b0/selectclass/selectCourseSystem/daTeach.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PRIVATE"
+		},
+		"CMakeFiles/selecteCoursesSystem.dir/database.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"destination" : null,
+			"name" : "cxx_modules",
+			"relative-directory" : "",
+			"source" : "/run/media/root/study/\u8f6f\u4ef6\u6784\u5efa\u4e0e\u5b9e\u73b0/selectclass/selectCourseSystem/database.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PRIVATE"
+		},
+		"CMakeFiles/selecteCoursesSystem.dir/databaseManger.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"destination" : null,
+			"name" : "cxx_modules",
+			"relative-directory" : "",
+			"source" : "/run/media/root/study/\u8f6f\u4ef6\u6784\u5efa\u4e0e\u5b9e\u73b0/selectclass/selectCourseSystem/databaseManger.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PRIVATE"
+		},
+		"CMakeFiles/selecteCoursesSystem.dir/domain.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"destination" : null,
+			"name" : "cxx_modules",
+			"relative-directory" : "",
+			"source" : "/run/media/root/study/\u8f6f\u4ef6\u6784\u5efa\u4e0e\u5b9e\u73b0/selectclass/selectCourseSystem/domain.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PRIVATE"
+		},
+		"CMakeFiles/selecteCoursesSystem.dir/person.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"destination" : null,
+			"name" : "cxx_modules",
+			"relative-directory" : "",
+			"source" : "/run/media/root/study/\u8f6f\u4ef6\u6784\u5efa\u4e0e\u5b9e\u73b0/selectclass/selectCourseSystem/person.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PRIVATE"
+		},
+		"CMakeFiles/selecteCoursesSystem.dir/registrar.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"destination" : null,
+			"name" : "cxx_modules",
+			"relative-directory" : "",
+			"source" : "/run/media/root/study/\u8f6f\u4ef6\u6784\u5efa\u4e0e\u5b9e\u73b0/selectclass/selectCourseSystem/registrar.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PRIVATE"
+		},
+		"CMakeFiles/selecteCoursesSystem.dir/student.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"destination" : null,
+			"name" : "cxx_modules",
+			"relative-directory" : "",
+			"source" : "/run/media/root/study/\u8f6f\u4ef6\u6784\u5efa\u4e0e\u5b9e\u73b0/selectclass/selectCourseSystem/student.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PRIVATE"
+		},
+		"CMakeFiles/selecteCoursesSystem.dir/studentcontroller.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"destination" : null,
+			"name" : "cxx_modules",
+			"relative-directory" : "",
+			"source" : "/run/media/root/study/\u8f6f\u4ef6\u6784\u5efa\u4e0e\u5b9e\u73b0/selectclass/selectCourseSystem/studentcontroller.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PRIVATE"
+		},
+		"CMakeFiles/selecteCoursesSystem.dir/teacher.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"destination" : null,
+			"name" : "cxx_modules",
+			"relative-directory" : "",
+			"source" : "/run/media/root/study/\u8f6f\u4ef6\u6784\u5efa\u4e0e\u5b9e\u73b0/selectclass/selectCourseSystem/teacher.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PRIVATE"
+		},
+		"CMakeFiles/selecteCoursesSystem.dir/teachercontroller.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"destination" : null,
+			"name" : "cxx_modules",
+			"relative-directory" : "",
+			"source" : "/run/media/root/study/\u8f6f\u4ef6\u6784\u5efa\u4e0e\u5b9e\u73b0/selectclass/selectCourseSystem/teachercontroller.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PRIVATE"
+		},
+		"CMakeFiles/selecteCoursesSystem.dir/ui.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"destination" : null,
+			"name" : "cxx_modules",
+			"relative-directory" : "",
+			"source" : "/run/media/root/study/\u8f6f\u4ef6\u6784\u5efa\u4e0e\u5b9e\u73b0/selectclass/selectCourseSystem/ui.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PRIVATE"
+		}
+	},
+	"database-info" : null,
+	"dir-cur-bld" : "/run/media/root/study/\u8f6f\u4ef6\u6784\u5efa\u4e0e\u5b9e\u73b0/selectclass/selectCourseSystem/build/C_C_2026_01_12-Debug",
+	"dir-cur-src" : "/run/media/root/study/\u8f6f\u4ef6\u6784\u5efa\u4e0e\u5b9e\u73b0/selectclass/selectCourseSystem",
+	"dir-top-bld" : "/run/media/root/study/\u8f6f\u4ef6\u6784\u5efa\u4e0e\u5b9e\u73b0/selectclass/selectCourseSystem/build/C_C_2026_01_12-Debug",
+	"dir-top-src" : "/run/media/root/study/\u8f6f\u4ef6\u6784\u5efa\u4e0e\u5b9e\u73b0/selectclass/selectCourseSystem",
+	"exports" : [],
+	"forward-modules-from-target-dirs" : [],
+	"include-dirs" : [],
+	"language" : "CXX",
+	"linked-target-dirs" : 
+	[
+		"/run/media/root/study/\u8f6f\u4ef6\u6784\u5efa\u4e0e\u5b9e\u73b0/selectclass/selectCourseSystem/build/C_C_2026_01_12-Debug/CMakeFiles/__CMAKE__CXX23@synth_d88ede04f9e9.dir"
+	],
+	"module-dir" : "/run/media/root/study/\u8f6f\u4ef6\u6784\u5efa\u4e0e\u5b9e\u73b0/selectclass/selectCourseSystem/build/C_C_2026_01_12-Debug/CMakeFiles/selecteCoursesSystem.dir",
+	"sources" : 
+	{
+		"CMakeFiles/selecteCoursesSystem.dir/main.cpp.o" : 
+		{
+			"language" : "CXX",
+			"source" : "/run/media/root/study/\u8f6f\u4ef6\u6784\u5efa\u4e0e\u5b9e\u73b0/selectclass/selectCourseSystem/main.cpp"
+		}
+	}
+}
