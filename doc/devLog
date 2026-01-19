@@ -32,3 +32,5 @@ created by tujunfeng 2026.01.17
 调试代码。1.teacher.cppm中出现course的前向声明，解决：导入course模块
         2.修改了course.cppm中的incomplete type错误
         3.修改了命名不一问题：修正类名拼写 InitialiSezDatabase → InitializeDatabase
+created by Yang Guang 2026.1.19
+上传幻灯片
